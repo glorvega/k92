@@ -5,13 +5,13 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #F5F4F1;
-    min-height: 45px;
+    background-color: #000000;
+    min-height: 70px;
     text-transform: uppercase;
     top: 0;
     position: sticky;
     z-index: 999999;
-    box-shadow: rgba(33, 35, 38, 0.2) 0px 10px 10px -10px;
+    box-shadow: rgb(33 35 38 / 35%) 0px 20px 20px 3px;
 
     &__left {
         display: flex;
@@ -33,38 +33,19 @@
             z-index: 9999999;
         }
 
-        &--logo {
-            img {
-                width: 110px;
-                cursor: pointer;
-            }
-        }
+        
     }
 
     &__middle {
 
-        &--input-wrapper {
-            margin-top: 10px;
-
-            input {
-                padding-left: 25px;
-                position: relative;
-                -webkit-border-radius: 20px;
-                -moz-border-radius: 20px;
-                border-radius: 20px;
-                border: none;
-                color: #71797d;
-                width: 400px;
-                height: 30px;
-                padding-left: 10px;
-
-                &:focus {
-                    outline: none;
-                    border: 1px solid #bfcbd3;
-                    color: #041821;
-                }
-
-
+        &--logo {
+            img {
+                width: 110px;
+                border-radius: 50%;
+                cursor: pointer;
+                position: absolute;
+                top: 0px;
+                box-shadow: rgb(33 35 38 / 35%) 0px 20px 20px 3px;
             }
         }
     }
@@ -78,7 +59,7 @@
             cursor: pointer;
 
             &:hover {
-                color: #000;
+                color: #ffffff;
                 text-decoration: underline;
             }
 
